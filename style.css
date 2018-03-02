@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  color: #222;
+  text-decoration: none;
+  font-size: 1.5vw;
+  font-family: sans-serif;
+  outline: none;
+}
+
+body {
+  background: #264;
+}
+
+#search {
+  text-align: center;
+  margin: 2vw;
+}
+
+.centered {
+  /* center hor and vert */
+}
+
+input {
+  position: relative;
+  left: 0.25vw;
+  border-top-left-radius: 2vw;
+  border-bottom-left-radius: 2vw;
+  padding: 0.5vw;
+  padding-left: 0.75vw;
+}
+
+button {
+  position: relative;
+  right: 0.25vw;
+  border-top-right-radius: 2vw;
+  border-bottom-right-radius: 2vw;
+  font-variant: small-caps;
+  font-weight: bold;
+  padding: 0.5vw;
+}
+
+ul {
+  padding: 0;
+  width: 65vw;
+  margin: 0 auto;
+}
+
+li {
+  background: white;
+  list-style-type: none;
+  margin: 1vw;
+  padding: 1vw;
+  border-radius: 15px;
+}
