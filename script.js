@@ -1,6 +1,7 @@
 $(function() {
   $('#searchButton').click(function() {
     var results = $('ul');
+
     var searchTerm = $('#searchbar').val();
     if (searchTerm === '') searchTerm = ' ';
 
@@ -15,12 +16,13 @@ $(function() {
         console.log(data);
         results.empty();
         $.each(data[1], function(i, result) {
-          results.append('<a href="' + data[3][i] + '"><li><strong>' + data[1][i] + '</strong><br>' + data[2][i] + '<br>' + '</li></a>');
+          results.append('<a href="' + data[3][i] + '" target="_blank"><li><strong>' + data[1][i] + '</strong><br>' + data[2][i] + '<br>' + '</li></a>');
         });
       }
     });
 
-    // remove centered class from #search div
+    $('#searchbar').val('');
+    $('#search').removeClass('centered');
   });
 
   $('#searchbar').keypress(function(e) {
